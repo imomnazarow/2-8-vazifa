@@ -160,3 +160,40 @@ function uzunlik(str) {
 }
 
 console.log(uzunlik("make"));
+
+// 41.Funksiya2taargumentqabulqiladi. Birinchiargument
+// ikkinchiargumentdankattaemas.Agarbirinchiargumentni
+// ikkinchisigabo’linsa,funksiyatrueqaytaradiaksholdafalse
+// Namuna:
+// bolinsin(98,7) true
+// //98/7=14
+// bolinsin(85,4) false
+function bolinsin(x, y) {
+  if (x % y === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(bolinsin(98, 7));
+
+// 42.Funksiyagaraqamstringko’rinishidaberilsa,funksiyaushbu
+// ma’lumotniyanaraqamma’lumotturiko’rinishidaqaytarib
+// bersin.
+function raqam(str) {
+  return Number(str);
+}
+console.log(raqam("676"));
+
+// 43.To’rtburchakningyuzini hisoblaydigan funksiyayasang.
+// Bundafunksiyagato’rtburchakning(ya’nito’g’riturtburchak)
+// tomonlariberiladi. Funksiyauningyuziniqaytarishikerak,
+// agartomonlarxatokiritilganbo’lsafunksiya-1qaytarsin.
+function tortYuzi(a, b) {
+  if (a > 0 && b > 0) {
+    return a * b;
+  } else {
+    return -1;
+  }
+}
+console.log(tortYuzi(3, 4));
